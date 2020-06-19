@@ -1,0 +1,29 @@
+<!-- views/pages/index.ejs -->
+<% include ../partials/header %>    
+<link rel="stylesheet" href="/assets/css/index.css">
+
+<main>
+
+<div class="grid-container-full">
+       <div class="index0">
+              <img src="/images/crowd3-foto-colourbox.jpg" alt="">
+       </div>
+       <div class="index1">
+              <h2>NYHEDER</h2>
+       </div>
+
+</div>
+
+<div class="fluid-grid">
+       <% nyheder.items.forEach(function(item) {
+       %> <a href="#"><div class="card"> <img src="<%= item.image %>" alt="">
+       <h3><%= item.title %></h3>
+       <p class="summ"> <%= item.teaser %></p>
+       <button>SE MERE</button>
+       </div> </a>
+       <% }); %>
+</div>
+        
+</main>
+        
+<% include ../partials/footer %>

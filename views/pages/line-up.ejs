@@ -1,0 +1,40 @@
+<% include ../partials/header %>    
+      
+<link rel="stylesheet" href="/assets/css/line-up.css">
+
+<main>
+
+<div class="grid-container">
+       <div class="line-up1">
+              <h2>LINE-UP</h2>
+       </div>
+       <div class="line-up2">
+        <nav id="lineup-nav">
+            <ul>
+                <li class="grey"><a href="#">A-Å</a></li>
+                <li class="red"><a href="#">RØD SCENE</a></li>
+                <li class="blue"><a href="#">BLÅ SCENE</a></li>
+                <li class="green"><a href="#">GRØN SCENE</a></li>
+                <li class="purple"><a href="#">LILLA SCENE</a></li>
+                <li class="grey"><a href="#">FILTER</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</div>
+
+<div class="fluid-grid">
+       <% lineup.items.slice(0,9).forEach(function(item) {
+       %> <a href="/artist-side/<%= item.id %>"> <div class="card" value="<%= item.stage_name %>" > <img src="<%= item.image %>" alt="">
+       <h3><%= item.title %></h3>
+       <h4><%= item.local_time %></h4>
+       </div> </a>
+       <% }); %>
+</div>
+        
+</main>
+        
+<script src="/assets/js/line-up.js"></script>
+
+
+<% include ../partials/footer %>

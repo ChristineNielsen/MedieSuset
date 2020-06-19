@@ -1,0 +1,33 @@
+<% include ../partials/header %>    
+      
+<link rel="stylesheet" href="/assets/css/camp-side.css">
+
+<main>
+
+    <div class="grid-container-full">
+           <div class="camp1">
+              <img src="<%= camp.item.image %>" alt="">
+           </div>
+           <div class="camp2">
+              <h2><%= camp.item.name %></h2>
+           </div>
+           <div class="camp3">
+           <h4>
+              <p> <%= camp.item.description %> </p> <br>
+
+              <p><span>På <%= camp.item.name %> får du:</span> <br>
+              <% facilities.forEach(function(item) {
+               %> 
+               <%= item.title %> </p>
+               <% }); %> <br>
+
+               <p> <span>Antal pladser i alt</span> <br>
+                  <%= camp.item.num_people %> </p> 
+                  <br>
+            </h4>    
+         </div>
+ </div>
+    
+</main>
+
+<% include ../partials/footer %>

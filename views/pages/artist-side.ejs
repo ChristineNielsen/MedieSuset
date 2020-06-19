@@ -1,0 +1,18 @@
+<% include ../partials/header %>  
+
+<link rel="stylesheet" href="/assets/css/artist-side.css">
+
+<main>
+
+<div class="grid-container">
+    <div class="artist-side1"> <img src="<%= artist.item.image %>" alt="">
+    </div>
+    <div class="artist-side2">
+        <h2><%= artist.item.title %></h2> <br>
+        <h4><%= artist.item.description %></h4>
+    </div>
+</div>
+
+</main>
+
+<% include ../partials/footer %>

@@ -1,0 +1,43 @@
+/*BLOCKS BEGIN*/
+.camp1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / 13;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.camp1 img {
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.camp2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / 13;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  text-align: center;
+}
+
+.camp2 h2 {
+  font-weight: 600;
+  margin: 1.5vw;
+  font-size: 2.3em;
+}
+
+.camp3 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 10;
+  grid-column: 2 / 12;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+/*BLOCKS END*/
+span {
+  font-weight: 600;
+}
+/*# sourceMappingURL=camp-side.css.map */

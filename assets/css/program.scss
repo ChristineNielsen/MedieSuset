@@ -1,0 +1,108 @@
+/*BLOCKS BEGIN*/
+.program1{
+    grid-column: 1 / 13;
+    grid-row: 1;
+    text-align: center;
+  }
+
+.program1 h2{
+    font-weight: 600;
+    margin: 1.5vw;
+    font-size: 2.3em;
+}
+
+.program2{
+    grid-column: 1 / 13;
+    grid-row: 2;
+  }
+/*BLOCKS END*/
+
+
+/*NAV BEGIN*/
+#program-nav{
+    background-color: black;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+#program-nav li{
+    padding: 1.4vw
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+ul .red, ul .blue, ul .green, ul .purple{
+    color: white;
+}
+
+ul .red:hover{
+    background-color: #A33A49;
+    transition: .2s;
+    }
+
+ul .blue:hover{
+    background-color: #396999;
+    transition: .2s;
+    }
+
+ul .green:hover{
+    background-color: #6B8846;
+    transition: .2s;
+    }
+
+ul .purple:hover{
+    background-color: #80347C;
+    transition: .2s;
+    }
+/*NAV END*/
+
+
+.hide{
+    display: none;
+}
+
+.program{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.program h3{
+    font-weight: 600;
+    display: inline-block;
+}
+
+.program h4{
+    font-weight: 600;
+    display: inline-block;
+}
+
+.ons1, .ons2, .ons3, .ons4, .tors1, .tors2, .tors3, .tors4, .fre1, .fre2, .fre3, .fre4, .lør1, .lør2, .lør3, .lør4{
+    background-color: #eee;
+    margin: 0.2vw 0;
+    padding: 1.5vw  2vw;
+}
+
+.ons1:hover, .ons2:hover, .ons3:hover, .ons4:hover, .tors1:hover, .tors2:hover, .tors3:hover, .tors4:hover, .fre1:hover, .fre2:hover, .fre3:hover, .fre4:hover, .lør1:hover, .lør2:hover, .lør3:hover, .lør4:hover {
+    background-color: #ddd;
+}
+
+.program .red{
+    background-color: #A33A49;
+    color: white;
+
+.program .blue{
+    background-color: #396999;
+    color: white;
+}
+
+.program .green{
+    background-color: #6B8846;
+    color: white;
+}
+
+.program .purple{
+    background-color: #80347C;
+    color: white;
+} 

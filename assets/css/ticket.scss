@@ -1,0 +1,51 @@
+/*BLOCKS BEGIN*/
+.ticket0{
+    grid-column: 1 / 13;
+    grid-row: 1;
+  }
+
+.ticket1{
+    grid-column: 1 / 13;
+    grid-row: 2;
+    text-align: center;
+  }
+
+.ticket1 h2{
+    font-weight: 600;
+    margin: 1.5vw;
+    font-size: 2.3em;
+}
+.ticket2{
+    grid-column: 1 / 13;
+    grid-row: 3;
+  }
+  
+.ticket3{
+      grid-column: 1 / 13;
+      grid-row: 4;
+    }
+/*BLOCKS END*/
+
+.ticket2 h2, .ticket3 h2{
+    background-color: black;
+    color: white;
+    padding: 0.8vw 2vw;
+}
+
+.ticket-content h3{
+    font-weight: 600;
+    display: inline-block;
+}
+
+.ticket-content h4{
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 63.2vw;
+}
+
+.ticket-content{
+    border-bottom: 2px solid black;
+    line-height: calc(22px + 10*((100vw - 320px) / 680));
+    background-color: #eee;
+    padding: 2vw  2vw;
+}

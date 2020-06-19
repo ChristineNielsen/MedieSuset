@@ -1,0 +1,124 @@
+/*BLOCKS BEGIN*/
+.line-up1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / 13;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  text-align: center;
+}
+
+.line-up1 h2 {
+  font-weight: 600;
+  margin: 1.5vw;
+  font-size: 2.3em;
+}
+
+.line-up2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / 13;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+/*BLOCKS END*/
+/*NAV BEGIN*/
+#lineup-nav {
+  background-color: black;
+  text-align: center;
+}
+
+#lineup-nav li {
+  padding: 1.4vw;
+}
+
+#lineup-nav a {
+  color: white;
+  padding: 1vw;
+}
+
+.grey a:hover {
+  background-color: grey;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.red a:hover {
+  background-color: #A33A49;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.blue a:hover {
+  background-color: #396999;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.green a:hover {
+  background-color: #6B8846;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.purple a:hover {
+  background-color: #80347C;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+/*NAV END*/
+/*CARD BEGIN*/
+.card {
+  color: black;
+  height: 45vh;
+  -webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.57);
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.57);
+}
+
+.card img {
+  width: 100%;
+  height: 30vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.5em;
+}
+
+.card h3, h4 {
+  height: calc(35px + 3*((100vw - 320px) / 680));
+  color: white;
+  padding: 0 1vw;
+}
+
+.card button {
+  background-color: black;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 92%;
+  font-size: 18px;
+  padding: 1vw;
+  margin-bottom: 1vw;
+}
+
+.card button:hover {
+  color: red;
+}
+
+.summ {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+  text-align: center;
+  margin: 1vw;
+}
+
+/*CARD END*/
+/*# sourceMappingURL=line-up.css.map */

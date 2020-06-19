@@ -1,0 +1,30 @@
+<% include ../partials/header %>    
+
+<link rel="stylesheet" href="/assets/css/camps.css">
+
+<main>
+
+    <div class="grid-container-full">
+           <div class="camps0">
+                  <img src="/images/camp1-foto-colourbox.jpg" alt="">
+           </div>
+           <div class="camps1">
+                  <h2>CAMPS</h2>
+           </div>
+    
+    </div>
+    
+    <div class="fluid-grid">
+           <% camps.items.forEach(function(item) {
+           %><a class="link" href="/camp-side/<%= item.id %>"><div class="card"> <img src="<%= item.image %>" alt="">
+           <h3><%= item.name %></h3>
+           <p class="summ"> <%= item.description %></p>
+           <button>SE MERE</button>
+           </div> </a>
+           <% }); %>
+    </div>
+            
+    </main>
+
+
+<% include ../partials/footer %>

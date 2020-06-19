@@ -1,0 +1,140 @@
+<% include ../partials/header %>    
+      
+<link rel="stylesheet" href="/assets/css/program.css">
+
+<main id="program-main">
+
+<div class="grid-container">
+       <div class="program1">
+              <h2>PROGRAM</h2>
+       </div>
+       <div class="program2">
+        <nav id="program-nav">
+            <ul>
+                <li class="red" onclick="filter('ons1', 'ons2', 'ons3', 'ons4')">ONSDAG</li>
+                <li class="blue" onclick="filter('tors1', 'tors2', 'tors3', 'tors4')">TORSDAG</li>
+                <li class="green" onclick="filter('fre1', 'fre2', 'fre3', 'fre4')">FREDAG</li>
+                <li class="purple" onclick="filter('lør1', 'lør2', 'lør3', 'lør4')">LØRDAG</li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<div class="program">
+<h2 class="red">RØD SCENE</h2>
+    <div>
+       <% program.items.slice(0,4).forEach(function(item) {
+       %> <a class="ons1" href="/artist-side/<%= item.id %>">
+       <h3><%= item.title %></h3>
+       <h4><%= item.local_time %></h4></a>
+       <% }); %>
+    </div>
+    <div>
+        <% program.items.slice(10,13).forEach(function(item) {
+        %> <a class="tors1" href="/artist-side/<%= item.id %>">
+        <h3><%= item.title %></h3>
+        <h4><%= item.local_time %></h4></a>
+        <% }); %>
+     </div>
+     <div>
+        <% program.items.slice(23,26).forEach(function(item) {
+        %> <a class="fre1" href="/artist-side/<%= item.id %>">
+        <h3><%= item.title %></h3>
+        <h4><%= item.local_time %></h4></a>
+        <% }); %>
+     </div>
+     <div>
+        <% program.items.slice(36,39).forEach(function(item) {
+        %> <a class="lør1" href="/artist-side/<%= item.id %>">
+        <h3><%= item.title %></h3>
+        <h4><%= item.local_time %></h4></a>
+        <% }); %>
+     </div>
+<h2 class="blue">BLÅ SCENE</h2>
+    <div>
+       <% program.items.slice(4,7).forEach(function(item) {
+       %> <a class="ons2" href="/artist-side/<%= item.id %>">
+       <h3><%= item.title %></h3>
+       <h4><%= item.local_time %></h4></a>
+       <% }); %>
+    </div>
+    <div>
+        <% program.items.slice(13,16).forEach(function(item) {
+        %> <a class="tors2" href="/artist-side/<%= item.id %>">
+        <h3><%= item.title %></h3>
+        <h4><%= item.local_time %></h4></a>
+        <% }); %>
+     </div>
+     <div>
+        <% program.items.slice(26,29).forEach(function(item) {
+        %> <a class="fre2" href="/artist-side/<%= item.id %>">
+        <h3><%= item.title %></h3>
+        <h4><%= item.local_time %></h4></a>
+        <% }); %>
+     </div>
+     <div>
+        <% program.items.slice(39,42).forEach(function(item) {
+        %> <a class="lør2" href="/artist-side/<%= item.id %>">
+        <h3><%= item.title %></h3>
+        <h4><%= item.local_time %></h4></a>
+        <% }); %>
+     </div>
+<h2 class="green">GRØN SCENE</h2>
+    <div>
+       <% program.items.slice(7,10).forEach(function(item) {
+       %> <a class="ons3" href="/artist-side/<%= item.id %>">
+       <h3><%= item.title %></h3>
+       <h4><%= item.local_time %></h4></a>
+       <% }); %>
+    </div>
+    <div>
+        <% program.items.slice(16,19).forEach(function(item) {
+        %> <a class="tors3" href="/artist-side/<%= item.id %>">
+        <h3><%= item.title %></h3>
+        <h4><%= item.local_time %></h4></a>
+        <% }); %>
+     </div>
+     <div>
+        <% program.items.slice(29,32).forEach(function(item) {
+        %> <a class="fre3" href="/artist-side/<%= item.id %>">
+        <h3><%= item.title %></h3>
+        <h4><%= item.local_time %></h4></a>
+        <% }); %>
+     </div>
+     <div>
+        <% program.items.slice(42,46).forEach(function(item) {
+        %> <a class="lør3" href="/artist-side/<%= item.id %>">
+        <h3><%= item.title %></h3>
+        <h4><%= item.local_time %></h4></a>
+        <% }); %>
+     </div>
+<h2 class="purple">LILLA SCENE</h2>
+    <h3 class="ons4">Intet på programmet</h3>
+    <div>
+       <% program.items.slice(19,23).forEach(function(item) {
+       %> <a class="tors4" href="/artist-side/<%= item.id %>">
+       <h3><%= item.title %></h3>
+       <h4><%= item.local_time %></h4></a>
+       <% }); %>
+    </div>
+    <div>
+        <% program.items.slice(32,36).forEach(function(item) {
+        %> <a class="fre4" href="/artist-side/<%= item.id %>">
+        <h3><%= item.title %></h3>
+        <h4><%= item.local_time %></h4></a>
+        <% }); %>
+     </div>
+     <div>
+        <% program.items.slice(46,50).forEach(function(item) {
+        %> <a class="lør4" href="/artist-side/<%= item.id %>">
+        <h3><%= item.title %></h3>
+        <h4><%= item.local_time %></h4></a>
+        <% }); %>
+     </div>
+</div>
+        
+</main>
+        
+<script src="/assets/js/program.js"></script>
+
+<% include ../partials/footer %>

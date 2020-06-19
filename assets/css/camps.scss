@@ -1,0 +1,64 @@
+/*BLOCKS BEGIN*/
+.camps0{
+  grid-column: 1 / 13;
+  grid-row: 1;
+}
+
+.camps1{
+    grid-column: 1 / 13;
+    grid-row: 2;
+    text-align: center;
+  }
+
+.camps1 h2{
+    font-weight: 600;
+    margin: 1.5vw;
+    font-size: 2.3em;
+}
+
+
+/*CARD BEGIN*/
+.card{
+    text-align: center;
+    color: black;
+    background-color: #eee;
+  }
+  
+  .card img{
+    width: 90%;
+    height: 30vh;
+    object-fit: cover;
+    margin-top: 1vw;
+  }
+  
+  .card h3{
+    height: 3vw;
+  }
+  
+  .card button {
+    background-color: black;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 92%;
+    font-size: 18px;
+    padding: 1vw;
+    margin-bottom: 1vw;
+  }
+      
+  .card button:hover {
+    background-color: #396999;
+  }
+    
+  .summ{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    text-align: center;
+    margin: 1vw;
+    }
+  /*CARD END*/
+
+  

@@ -1,0 +1,76 @@
+/*BLOCKS BEGIN*/
+.index0{
+  grid-column: 1 / 13;
+  grid-row: 1;
+}
+
+  .index1{
+    grid-column: 1 / 13;
+    grid-row: 2;
+    text-align: center;
+  }
+
+.index1 h2{
+    font-weight: 600;
+    margin: 1.5vw;
+    font-size: 2.3em;
+}
+
+/*BLOCKS END*/
+
+
+/*CARD BEGIN*/
+.card{
+    text-align: center;
+    color: black;
+    background-color: #eee;
+  }
+  
+  .card img{
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+  }
+  
+  .card h3{
+    height: 3vw;
+  }
+  
+  .card button {
+    background-color: black;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    padding: 1vw;
+  }
+      
+  .card button:hover {
+    color: red;
+  }
+    
+  .summ{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    text-align: center;
+    margin: 1vw;
+    }
+  /*CARD END*/
+
+  .index-button {
+    width: calc(90% - 10 *((100vw - 320px) / 680));
+    padding: calc(10px + 3 *((100vw - 320px) / 680));
+    margin: 2vw auto 4vw auto;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #396999;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+
+  

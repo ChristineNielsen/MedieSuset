@@ -1,0 +1,69 @@
+/*BLOCKS BEGIN*/
+.praktisk0 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / 13;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.praktisk1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / 13;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  text-align: center;
+}
+
+.praktisk2 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-column: 3 / 6;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.praktisk3 {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 6;
+  grid-column: 6 / 12;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.praktisk3 img {
+  width: 90%;
+  margin: 2vw 0;
+}
+
+/*BLOCKS END*/
+.praktisk1 h2 {
+  font-weight: 600;
+  margin: 2.5vw;
+  font-size: 2.3em;
+}
+
+.praktisk2 h4 {
+  line-height: calc(25px + 2*((100vw - 320px) / 680));
+  margin-top: 2vw;
+}
+
+@media only screen and (max-width: 620px) {
+  .praktisk2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / 13;
+    -ms-grid-row: 3;
+    grid-row: 3;
+    text-align: center;
+  }
+  .praktisk3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / 13;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+}
+/*# sourceMappingURL=praktisk.css.map */
